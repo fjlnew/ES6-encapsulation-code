@@ -1,0 +1,42 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    font-family: '微软雅黑';
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#biggestpage {
+    touch-action: none;
+    position: relative;
+    width: 320px;
+    transition: all 1s linear;
+    height: 100%;
+    background: #87CEFA;
+    margin: 0px 0 0 120px;
+}
+
+.smallpage {
+    width: 100%;
+    height: 100%;
+}
+
+.smallpage1 {
+    background: red;
+}
+
+.smallpage2 {
+    background: green;
+}
+
+.smallpage3 {
+    background: yellow;
+}
+
+.smallpage4 {
+    background: pink;
+}
