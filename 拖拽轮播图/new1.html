@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .biggbox1 {
+            height: 300px;
+            width: 600px;
+            overflow: hidden;
+        }
+
+        .lunbotu1 {
+            height: auto;
+            width: auto;
+        }
+
+        .dongtaitu1 {
+            height: 300px;
+            width: 2400px;
+            transition: all 1s;
+        }
+
+        .dongtaitu1 img {
+            height: 300px;
+            width: 600px;
+            float: left;
+        }
+
+        .dongtai-button1 {
+            height: 20px;
+            width: 600px;
+            position: relative;
+            z-index: 2;
+            margin-top: -20px;
+            margin-left: calc(50% - 400px);
+        }
+
+        .dongtai-button1 .cbutton {
+            height: 15px;
+            width: 15px;
+            margin-left: 5%;
+            background-color: black;
+            float: left;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lunbotu1" id="lunbotu1">
+        <div class="biggbox1" id="biggbox1">
+            <div class="dongtaitu1" id="dongtaitu1">
+                <img id="noimg" src="./img/lighten1.jpg" alt="">
+                <img id="noimg" src="./img/lighten2.jpg" alt="">
+                <img id="noimg" src="./img/lighten3.jpg" alt="">
+            </div>
+        </div>
+        <div class="dongtai-button1">
+            <div class="cbutton" onclick="fun(1)"></div>
+            <div class="cbutton" onclick="fun(2)"></div>
+            <div class="cbutton" onclick="fun(3)"></div>
+        </div>
+    </div>
+</body>
+<script src="./new.js"></script>
+<script>
+    let q = new aroundPlay('lunbotu1','biggbox1','dongtaitu1',3,5000,600);
+    setInterval("q.zddh(q.nowplace,q.fangx)",q.changetime);
+    function fun(a){
+        q.gotothe(a);
+    }
+    document.getElementById("biggbox1").onmousedown = function(evt){
+        q.onmusetmove(evt);
+    }
+</script>
+
+</html>

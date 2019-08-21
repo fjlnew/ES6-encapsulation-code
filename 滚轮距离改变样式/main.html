@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>滚轮改变样式</title>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+        <style>
+            p {
+                height: 30px;
+                line-height: 30px;
+                background: #f3f3f3;
+                opacity: 0;
+                transition: all 1s;
+            }
+            .bgc{
+                background-color: red;
+                opacity: 1
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <b>hellow</b><br>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <p>你好，china！</p>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+                <p>你好，china！</p>
+                <b>hellow</b><br>
+                <b>hellow</b><br>
+                <p>你好，china！</p>
+        </div>
+    </body>
+    <script src="./js/gunlunjuli.js"></script>
+    <script>
+        //p为要操作的元素，bgc为class，表示要进行的动画。
+        let q = new gundongjulianimation('p','bgc');
+	    q.gunlunbiggen();
+    </script>
+
+</html>
